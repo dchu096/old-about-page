@@ -29,8 +29,25 @@
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
   </head>
-  <body>
+  <body onload="startTime()">
     <!-- Reference item-->
     <!-- navbar-->
     <header class="header">
@@ -43,6 +60,7 @@
               <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
               <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
               <li class="nav-item"><a href="#github" class="nav-link link-scroll">github page</a></li>
+              <li class="nav-item"><div id="txt"></div></li>
             </ul>
           </div>
         </div>
