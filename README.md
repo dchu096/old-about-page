@@ -84,8 +84,3 @@ However you cannot redistribute the template nor its derivatives on the internet
 
 Thank you for understanding and respecting the license conditions.
 
----------------------
- GET IN TOUCH ;)
----------------------
-
-https://twitter.com/bootstrapious | https://google.com/+Bootstrapious1 | https://www.facebook.com/bootstrapious | hello@bootstrapious.com
